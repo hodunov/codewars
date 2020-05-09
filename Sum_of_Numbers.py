@@ -12,9 +12,10 @@
 
 
 def get_sum(a, b):
+    if a == b:
+        return a
     counter = 0
-    is_negative = -1 if a < 0 or b < 0 else 1
-    for i in range(a, b + is_negative, is_negative):
+    for i in range(min(a, b), max(a, b) + 1):
         counter += i
     return counter
 
@@ -22,3 +23,4 @@ def get_sum(a, b):
 print(get_sum(0, 1))
 print(get_sum(-1, 2))
 print(get_sum(1, 1))
+print(get_sum(0, 15))
