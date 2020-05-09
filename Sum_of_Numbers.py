@@ -24,3 +24,13 @@ print(get_sum(0, 1))
 print(get_sum(-1, 2))
 print(get_sum(1, 1))
 print(get_sum(0, 15))
+
+
+def get_sum_2(a,b):
+    return sum(range(min(a, b), max(a, b) + 1))
+
+
+print(get_sum_2(0, 1))
+print(get_sum_2(-1, 2))
+print(get_sum_2(1, 1))
+print(get_sum_2(0, 15))
